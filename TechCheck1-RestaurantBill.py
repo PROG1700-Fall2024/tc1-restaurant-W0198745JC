@@ -10,7 +10,8 @@
 
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
-
+# hard code variable for bill
+#bill=85
 #input variable for bill
     bill=input("Please enter your original bill amount: ")
 #taxes 15/100
@@ -25,6 +26,7 @@ def main():
     totalBill=int(bill)+billTax+billTip
 #print all bill , taxes , tip , and total
     print("Your original bill amount is: ${0:.2f}".format(float(bill))) 
+#had an initial bug and had to cast bill to float for it to print
     print("Your Tax is: ${0:.2f}".format(billTax))
     print("Your tip is: ${0:.2f}".format(billTip))
     print("Your total is: ${0:.2f}".format(totalBill))
