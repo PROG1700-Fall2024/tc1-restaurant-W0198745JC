@@ -11,7 +11,23 @@
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
 
-
+#input variable for bill
+    bill=input("Please enter your original bill amount: ")
+#taxes 15/100
+    taxes=15/100
+#taxes*bill
+    billTax=taxes*int(bill)
+#Tip 20/100
+    tip=20/100
+#Tip*bill
+    billTip=tip*int(bill)
+#total for bill
+    totalBill=int(bill)+billTax+billTip
+#print all bill , taxes , tip , and total
+    print("Your original bill amount is: ${0:.2f}".format(float(bill))) 
+    print("Your Tax is: ${0:.2f}".format(billTax))
+    print("Your tip is: ${0:.2f}".format(billTip))
+    print("Your total is: ${0:.2f}".format(totalBill))
 
 
 
